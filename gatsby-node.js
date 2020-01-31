@@ -6,7 +6,6 @@
 
 // You can delete this file if you're not using it
 
-
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     const { createNode } = actions
 
@@ -33,11 +32,3 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
         createNode(nodeMeta)
     });
 }
-
-// exports.createSchemaCustomization = ({ actions }) => {
-//     const { createTypes } = actions
-//     const typeDefs = `type ContentfulMarketingEvent implements Node {
-//         dateTime: Date @dateformat(formatString: "YYYY-M-MMM-D-h:mm a")
-//     }`
-//     createTypes(typeDefs)
-// }
